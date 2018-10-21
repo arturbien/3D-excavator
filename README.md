@@ -1,4 +1,4 @@
-#How to
+# How to
 
 ### Gulp tasks
 Task name          | Description                                                      
