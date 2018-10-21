@@ -1,4 +1,6 @@
 # How to
+- clone repo
+- `npm install`
 
 ### Gulp tasks
 Task name          | Description                                                      
