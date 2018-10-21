@@ -115,8 +115,7 @@ function onClickCallback( event ) {
   mouse.y = - ( ( event.clientY - canvasBounds.top ) / ( canvasBounds.bottom - canvasBounds.top) ) * 2 + 1;
 
   raycaster.setFromCamera( mouse, camera );
-  const modelChildren = [...scene.children[scene.children.length-1].children[0].children[0].children[0].children];
-  const intersects = raycaster.intersectObjects( [...scene.children, ...modelChildren] ); 
+  const intersects = raycaster.intersectObjects( scene.children ); 
   if ( intersects.length > 0 ) {
     if (intersects[0].object.callback) {
       intersects[0].object.callback();
