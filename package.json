@@ -67,6 +67,7 @@
     "gsap": "^2.0.2",
     "three": "^0.96.0",
     "three-gltf-loader": "^1.96.0",
-    "three-orbit-controls": "^82.1.0"
+    "three-orbit-controls": "^82.1.0",
+    "threex.domevents": "^1.0.1"
   }
 }
