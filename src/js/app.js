@@ -75,8 +75,7 @@ function init() {
       hovering--;
       sprite.scale.x = sprite.scale.y = sprite.scale.z = initialScale;
     });
-    domEvents.addEventListener(sprite, 'click', function(event) {
-      event.stopPropagation();
+    domEvents.addEventListener(sprite, 'click', function() {
       sprite.callback();
     });
   });

@@ -8,7 +8,7 @@ export default class Annotations {
   }
 
   createTHREEAnnotations(scene) {
-    annotations.forEach((annotation, i) => {
+    annotations.forEach(annotation => {
       const sprite = makeTextSprite(annotation.number, annotationStyle3D);
       sprite.position.set(
         annotation.position.x,
@@ -16,7 +16,6 @@ export default class Annotations {
         annotation.position.z
       );
       sprite.callback = () => {
-        event.preventDefault();
         annotationCallback(annotation.number, annotation.link);
       };
       // sprite.renderOrder = 1000+i;
