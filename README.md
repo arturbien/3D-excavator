@@ -13,6 +13,3 @@ Task name          | Description
 `default`          | initial build, watch files, run server with livereload
 `build`            | build production-ready project (with code optimizations)
 
-### 3D labels
-Configure labels style and on-click behaviour in `src/config.js`
-
