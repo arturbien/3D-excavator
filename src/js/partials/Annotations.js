@@ -1,4 +1,4 @@
-import * as THREE from 'three';
+// import * as THREE from 'three';
 import makeTextSprite from './makeTextSprite';
 import { annotationCallback, annotationStyle3D, annotations } from './config';
 
@@ -20,19 +20,6 @@ export default class Annotations {
       };
       // sprite.renderOrder = 1000+i;
       scene.add(sprite);
-    });
-  }
-
-  createHTMLAnnotations() {
-    const self = this;
-    annotations.forEach(function(annotation) {
-      const a = document.createElement('a');
-      a.classList.add('annotation');
-      a.setAttribute('href', annotation.link);
-      a.setAttribute('data-annotation', annotation.number);
-      a.innerHTML = annotation.number;
-      Object.assign(a.style, annotationStyleHTML);
-      self.canvasContainer.appendChild(a);
     });
   }
 

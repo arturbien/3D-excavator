@@ -403,7 +403,8 @@ THREEx.DomEvents.prototype._onContextmenu = function(event) {
 // # handle touch events
 
 THREEx.DomEvents.prototype._onTouchStart = function(event) {
-  return this._onTouchEvent('touchstart', event);
+  var mouseCoords = this._getRelativeMouseXY(event);
+  this._onMouseEvent('click', event);
 };
 THREEx.DomEvents.prototype._onTouchEnd = function(event) {
   return this._onTouchEvent('touchend', event);

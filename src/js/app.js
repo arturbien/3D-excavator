@@ -7,8 +7,6 @@ const OrbitControls = require('three-orbit-controls')(THREE);
 const GLTFLoader = require('three-gltf-loader');
 
 let camera, scene, renderer, orbitControls, domEvents, annotationsGroup;
-const raycaster = new THREE.Raycaster();
-const mouse = new THREE.Vector2();
 const VIEW_ANGLE = 50;
 
 const progressBar = document.getElementById('loader__progress-bar');
@@ -75,7 +73,8 @@ function init() {
       hovering--;
       sprite.scale.x = sprite.scale.y = sprite.scale.z = initialScale;
     });
-    domEvents.addEventListener(sprite, 'click', function() {
+    domEvents.addEventListener(sprite, 'click', function(e) {
+      console.log(e);
       sprite.callback();
     });
   });
@@ -118,7 +117,7 @@ function loadGLTF() {
     },
     // called when loading has errors
     function(error) {
-      console.log('An error happened during loading');
+      console.log('An error happened during loading', error);
     }
   );
 }
