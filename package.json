@@ -50,7 +50,7 @@
     "gulp-util": "^3.0.7",
     "htmlhint": "^0.9.13",
     "husky": "^0.14.3",
-    "jquery": "^3.1.1",
+    "jquery": "^3.5.0",
     "lint-staged": "^7.0.4",
     "lodash": "^4.3.0",
     "lost": "^7.1.0",
