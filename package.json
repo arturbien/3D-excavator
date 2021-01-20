@@ -64,7 +64,7 @@
   },
   "dependencies": {
     "animejs": "^2.2.0",
-    "gsap": "^2.0.2",
+    "gsap": "^3.6.0",
     "natives": "^1.1.6",
     "three": "^0.96.0",
     "three-gltf-loader": "^1.96.0",
